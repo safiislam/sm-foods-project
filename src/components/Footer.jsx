@@ -130,8 +130,9 @@ const Footer = () => {
     <section className="bg-slate-100 text-gray-700 py-10 ">
       <div className="lg:w-[90%] mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center sm:text-left">
-          <div>
+          <div className="">
             <h2 className="font-bold text-lg">SM Foods</h2>
+            <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।</p>
           </div>
           <div>
             <h5 className="font-semibold">Quick Links</h5>
