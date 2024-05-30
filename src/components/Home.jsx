@@ -31,7 +31,7 @@ const Home = () => {
 					<div className="col-span-12 lg:col-span-6 xl:col-span-5 xl:pr-12 text-center lg:text-start">
 						<div className="flex flex-col justify-center h-full">
 							<h2 className="text-3xl font-bold md:text-[70px] leading-none mb-6">
-								Egestas sed sed risus pretium
+								SM FOODS
 							</h2>
 							<p className="text-[22px] leading-normal opacity-80">
 								This is a factor in the economy of a nation, and the
@@ -40,9 +40,9 @@ const Home = () => {
 							<div>
 								<a
 									href="#!"
-									className="bg-white dark:bg-slate-900 text-indigo-900 dark:text-white shadow-xl rounded py-3 px-8 text-xl mt-6 md:mt-12 inline-block"
+									className="bg-white dark:bg-slate-900 text-indigo-900 dark:text-white shadow-xl rounded py-3 px-8 text-xl mt-6 md:mt-12 inline-block "
 								>
-									Try Now{" "}
+									Order Now{" "}
 									{/* <FontAwesomeIcon icon={faArrowRight} className="ml-2" /> */}
 								</a>
 							</div>
@@ -50,7 +50,7 @@ const Home = () => {
 					</div>
 					<div className="col-span-12 lg:col-span-6 xl:col-span-5 text-center lg:text-start">
 						<img
-							src="https://cdn.easyfrontend.com/pictures/hero/hero-11.png"
+							src="https://5.imimg.com/data5/DA/NK/MY-17465016/mustard-seed-oil-500x500.jpg"
 							alt=""
 							className="rounded max-w-full h-full mt-4"
 						/>
