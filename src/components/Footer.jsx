@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
 
 const quickLinks = [
-  { value: "Home", href: "#!" },
-  { value: "About Us", href: "#!" },
-  { value: "Services", href: "#!" },
+  { value: "রিটার্ন পলিসি", href: "#!" },
+  { value: "রিফান্ড পলিসি", href: "#!" },
 ];
 
 

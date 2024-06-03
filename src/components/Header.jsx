@@ -31,13 +31,16 @@ const Header = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/">All Product</Link>
             </li>
             <li>
-              <Link to="/services">Services</Link>
+              <Link to="/">Honey</Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/">Sarisha Oil</Link>
+            </li>
+            <li>
+              <Link to="/">Gawa Ghee</Link>
             </li>
           </ul>
         </div>
@@ -46,7 +49,7 @@ const Header = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-semibold text-xl">
           <li>
-            <Link to="/">All Product</Link>
+            <Link to="/allProduct">All Product</Link>
           </li>
           <li>
             <Link to="/about">Honey</Link>
