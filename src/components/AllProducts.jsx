@@ -1,11 +1,82 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const AllProducts = () => {
-    return (
-        <div>
-            <p className=' text-center lg:font-semibold text-3xl mt-3 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text'>Our All Premium Products</p>
-        </div>
-    );
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("ProductData.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  console.log(products);
+
+  return (
+    <div>
+      <p className=" text-center lg:font-bold lg:text-4xl mt-3  w-full bg-gradient-to-r from-orange-500 to-yellow-200 py-12 text-white uppercase">
+        Our All Premium Products
+      </p>
+
+      {/* product item */}
+      <div className="w-[90%] mx-auto gap- p-5 grid md:grid-cols-2 lg:grid-cols-4   lg:ps-4">
+        {products.map((product) => (
+          <div
+            key={product.id}
+            className="card card-compact lg:w-80 bg-base-100 shadow-xl shadow-orange-100 hover:shadow-2xl my-12 "
+          >
+            <figure>
+              <img
+                className="h-[250px] w-[80%] p-4 rounded-3xl "
+                src={product.Image}
+                alt="Product name"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title font-semibold">{product.name}</h2>
+              <div className=" flex justify-between font-bold">
+                <p>Quantity: {product.quantity} </p>
+
+                <div className="flex items-center gap-1">
+                  <FaStar className="text-orange-500"></FaStar>
+                  <p> {product.rating}</p>
+                </div>
+              </div>
+              <p className="font-bold">
+                <span
+                  className={
+                    product.status === "Available"
+                      ? "text-green-600"
+                      : "text-red-600"
+                  }
+                >
+                  {product.status}
+                </span>
+              </p>
+              <div className="flex justify-between items-center gap-10 mt-3 mb-5">
+                <>
+                  {/* {`/toys/${_id}`} */}
+                  <Link to={``}>
+                    <button
+                      className="px-4 py-2 rounded-md
+                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ..."
+                    >
+                      Add To Cart
+                    </button>
+                  </Link>
+                </>
+
+                <p className=" text-right text-xl font-semibold">
+                  Tk {product.price} ৳
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default AllProducts;

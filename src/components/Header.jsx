@@ -63,7 +63,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to="/" className="bg-orange-500 hover:bg-red-700 px-6 lg:py-3 py-2 rounded-md text-white font-medium shadow-md">Get In Touch</Link>
+        <Link to="/" className="bg-orange-500 hover:bg-red-700 px-6 lg:py-3 py-2 rounded-md text-white font-medium shadow-md">Order Now</Link>
       </div>
     </div>
     </div>

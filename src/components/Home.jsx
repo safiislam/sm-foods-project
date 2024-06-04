@@ -89,7 +89,7 @@ const Home = () => {
                     <img className='rounded-full w-full' src="https://img.freepik.com/premium-vector/100-organic-food-product-sticker-certified-label_236275-45.jpg?ga=GA1.1.377660834.1717058610&semt=sph" alt="Paymant picture" />
                 </div>
                 <div>
-                    <p className='font-semibold mb-1'>১০০% ন্যাচারাল</p>
+                    <p className='font-semibold mb-1 '>১০০% ন্যাচারাল</p>
                     <p>প্রাকৃতিক উপাদান ব্যবহার করতে আমরা প্রতিশ্রুতিবদ্ধ</p>
                 </div>
             </div>

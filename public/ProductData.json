@@ -16,10 +16,10 @@
     "price" : "800",
     "category": "Ghee",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
-    "Image": "https://zamaorganics.com/cdn/shop/files/Untitleddesign_86.png?v=1706774218&width=700",
+    "Image": "https://i.ibb.co/CsNtTfM/Untitleddesign-86-removebg-preview.png",
     "status": "Coming Soon",
     "rating": "4.5",
-    "quantity": "1 L"
+    "quantity": "1 Kg"
     },
     {
     "id": 3, 
@@ -49,10 +49,10 @@
     "price" : "599",
     "category": "Oil",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
-    "Image": "",
+    "Image": "https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png",
     "status": "Available",
     "rating": "4.6",
-    "quantity": "1"
+    "quantity": "1 L"
     },
     {
     "id": 6, 
@@ -60,7 +60,7 @@
     "price" : "699",
     "category": "Ghee",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
-    "Image": "",
+    "Image": "https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3",
     "status": "Available",
     "rating": "4.4",
     "quantity": "500 g"
