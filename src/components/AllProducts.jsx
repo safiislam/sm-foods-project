@@ -34,16 +34,11 @@ const AllProducts = () => {
               />
             </figure>
             <div className="card-body">
-              <h2 className="card-title font-semibold">{product.name}</h2>
-              <div className=" flex justify-between font-bold">
+              <h2 className="text-xl font-bold">{product.name}</h2>
+              <div className=" flex justify-between font-bold items-center">
                 <p>Quantity: {product.quantity} </p>
 
-                <div className="flex items-center gap-1">
-                  <FaStar className="text-orange-500"></FaStar>
-                  <p> {product.rating}</p>
-                </div>
-              </div>
-              <p className="font-bold">
+                <p className="font-bold">
                 <span
                   className={
                     product.status === "Available"
@@ -54,6 +49,13 @@ const AllProducts = () => {
                   {product.status}
                 </span>
               </p>
+
+                <div className="flex items-center gap-1 text-lg">
+                  <FaStar className="text-orange-500"></FaStar>
+                  <p> {product.rating}</p>
+                </div>
+              </div>
+              
               <div className="flex justify-between items-center gap-10 mt-3 mb-5">
                 <>
                   {/* {`/toys/${_id}`} */}
@@ -67,8 +69,8 @@ const AllProducts = () => {
                   </Link>
                 </>
 
-                <p className=" text-right text-xl font-semibold">
-                  Tk {product.price} ৳
+                <p className=" text-right  font-semibold">
+                  Tk <span className="text-xl">{product.price} ৳</span> 
                 </p>
               </div>
             </div>
