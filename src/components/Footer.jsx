@@ -126,7 +126,7 @@ SocialItem.propTypes = {
 
 const Footer = () => {
   return (
-    <section className="bg-slate-200 text-black py-10">
+    <section className="bg-slate-100 text-black py-10">
       <div className="lg:w-[90%] mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center sm:text-left ">
           <div className="lg:col-span-2 px-3 lg:px-0 lg:pr-10">
@@ -167,13 +167,13 @@ const Footer = () => {
             </p>
           </div>
           <div className="mt-1 lg:mt-0">
-            <ul className="flex space-x-4">
+            <ul className="flex space-x-4 font-bold">
               {navigations.map((item, i) => (
                 <NavigationItem item={item} key={i} />
               ))}
             </ul>
           </div>
-          <div className="flex space-x-2 mt-1 lg:mt-0">
+          <div className="flex space-x-2 mt-1 lg:mt-0 ">
             <ul className="flex space-x-2">
               {sociaIcons.map((social, i) => (
                 <SocialItem social={social} key={i} />

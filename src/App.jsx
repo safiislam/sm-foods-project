@@ -1,13 +1,13 @@
 import "./App.css";
-import Header from "./components/Header"
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
 
   return (
     <div className="App">
-      <Header></Header>
+      <Navbar></Navbar>
       <div className='min-h-[calc(100vh-196px)] '>
         <Outlet></Outlet>
       </div>

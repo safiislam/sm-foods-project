@@ -23,7 +23,7 @@ const HeroHeaderShape = () => (
 const Home = () => {
     return (
         <div>
-            <section className="ezy__header11 light py-24 md:py-44 bg-white dark:bg-[#0b1727] text-indigo-900 dark:text-white relative z-10 overflow-hidden">
+            <section className="ezy__header11 light py-24 md:py-44 bg-white dark:bg-[#0b1727] text-indigo-900 dark:text-white relative  overflow-hidden  z-0">
 			<HeroHeaderShape />
 
 			<div className="container px-4 mx-auto relative">
