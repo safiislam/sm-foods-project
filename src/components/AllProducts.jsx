@@ -24,7 +24,7 @@ const AllProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="card card-compact lg:w-80 bg-base-100 shadow-xl shadow-orange-100 hover:shadow-xl my-12 ">
+            className="card card-compact lg:w-80 bg-base-100 shadow-lg shadow-orange-100 hover:shadow-xl my-12 ">
             <Link to={`/productDetails/${product.id}`}>
             <figure>
               <img

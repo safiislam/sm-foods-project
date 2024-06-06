@@ -13,13 +13,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const navItems = [
-    { id: 1, text: "Home" },
-    { id: 2, text: "Company" },
-    { id: 3, text: "Product" },
-    { id: 4, text: "About" },
-    { id: 5, text: "Contact" },
-  ];
+
   return (
     <div className="flex  justify-between items-center w-[100%]  lg:max-w-[100%] mx-auto  px-5 md:px-24 py-4 md:py-4 text-black sticky top-0 z-20 bg-white ">
       {/* Logo */}
@@ -40,9 +34,9 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-7 font-semibold">
           <Link to="/" className=" nav_a rounded-xl  cursor-pointer">Home</Link>
           <Link to="/allProduct" className=" nav_a rounded-xl  cursor-pointer">All Product</Link>
-          <Link to="" className=" nav_a rounded-xl  cursor-pointer">Sarisha Oil</Link>
+          <Link to="/sorishaOil" className=" nav_a rounded-xl  cursor-pointer">Sorisha Oil</Link>
           <Link to="/ghee" className=" nav_a rounded-xl  cursor-pointer">Gawa Ghee</Link>
-          <Link to="" className=" nav_a rounded-xl  cursor-pointer">Honey</Link>
+          <Link to="/honey" className=" nav_a rounded-xl  cursor-pointer">Honey</Link>
         </ul>
         {/* Mobile Navigation Icon */}
         <div onClick={handleNav} className="block md:hidden cursor-pointer">
@@ -90,13 +84,13 @@ const Navbar = () => {
             <Link to="/allProduct">All Product</Link>
           </li>
           <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/">Sarisha Oil</Link>
+            <Link to="/sorishaOil">Sorisha Oil</Link>
           </li>
           <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/">Gawa Ghee</Link>
+            <Link to="/ghee">Gawa Ghee</Link>
           </li>
           <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/">Honey</Link>
+            <Link to="/honey">Honey</Link>
           </li>
 
       </ul>
