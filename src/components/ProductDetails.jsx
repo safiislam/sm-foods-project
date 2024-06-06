@@ -19,7 +19,7 @@ const ProductDetails = () => {
         </div>
 
         <div className=" lg:w-[50%]">
-          <p className="text-3xl font-semibold mb-5">{productDetails.name}</p>
+          <p className="lg:text-4xl font-semibold mb-5">{productDetails.name}</p>
             <p className="text-xl font-semibold mb-4">Quantity : {productDetails.quantity}</p>
             <p className="text-xl font-semibold">
                 In Stock : 
