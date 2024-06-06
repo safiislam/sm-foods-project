@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
 
 const quickLinks = [
+  { value: "গ্রাহক সেবা", href: "#!" },
   { value: "রিটার্ন পলিসি", href: "#!" },
   { value: "রিফান্ড পলিসি", href: "#!" },
 ];
@@ -65,7 +66,7 @@ const sociaIcons = [
 
 const QuickLinks = ({ qLink }) => (
   <li>
-    <a href={qLink.href} className="text-gray-700 hover:text-gray-900">
+    <a href={qLink.href} className="text-gray-700 hover:text-gray-900 ">
       {qLink.value}
     </a>
   </li>
@@ -77,7 +78,7 @@ QuickLinks.propTypes = {
 
 const JobInfo = ({ job }) => (
   <li>
-    <a href={job.href} className="text-gray-700 hover:text-gray-900">
+    <a href={job.href} className="text-gray-700 hover:text-gray-900 ">
       {job.value}
     </a>
   </li>
@@ -133,6 +134,7 @@ const Footer = () => {
             <h2 className="font-bold text-lg">SM Foods</h2>
             <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর  গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।</p>
           </div>
+
           <div>
             <h5 className="font-semibold ">Quick Links</h5>
             <ul>
@@ -160,13 +162,13 @@ const Footer = () => {
           </div>
         </div>
         <hr className="my-6" />
-        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left ">
           <div>
             <p className="mb-1">
               Copyright &copy; Easy Frontend, All rights reserved
             </p>
           </div>
-          <div className="mt-1 lg:mt-0">
+          <div className="mt-1 lg:mt-0 ">
             <ul className="flex space-x-4 font-bold">
               {navigations.map((item, i) => (
                 <NavigationItem item={item} key={i} />

@@ -21,7 +21,7 @@ const Navbar = () => {
     { id: 5, text: "Contact" },
   ];
   return (
-    <div className="flex  justify-between w-[100%]  lg:max-w-[90%] mx-auto  px-5 md:px-0 py-4 md:py-4 text-black sticky top-0 z-20 bg-white ">
+    <div className="flex  justify-between items-center w-[100%]  lg:max-w-[100%] mx-auto  px-5 md:px-24 py-4 md:py-4 text-black sticky top-0 z-20 bg-white ">
       {/* Logo */}
 
       <Link to="/" className="hidden md:flex cursor-pointer">
@@ -48,22 +48,23 @@ const Navbar = () => {
           {nav ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
         </div>
       </div>
-      <div className="flex items-end gap-4 ">
+      <div className="flex items-center gap-5 ">
         <div className="relative cursor-pointer ">
-          <span className="bg-orange-400 absolute px-[6px] rounded-full text-sm font-bold -top-3 left-5 text-white">
+          <span className="bg-orange-500 absolute  px-[6px] rounded-full text-sm font-bold -top-3 left-5 text-white">
             0
           </span>
           <p className="font-bold flex  items-center text-black -mt-1">
-            {" "}
+            
             <IoCart size={30} />
           </p>
         </div>
         <div>
           <p className=" font-bold cursor-pointer flex justify-center items-center  text-black  mb-1">
-            {" "}
+            
             <FaUser size={24} />
           </p>
         </div>
+        <button className="bg-gradient-to-r from-orange-500 to-yellow-300 px-6 lg:py-2 py-2 rounded-md text-white font-semibold shadow-md">Login</button>
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -83,6 +84,15 @@ const Navbar = () => {
 
           <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
             <Link to="/">Home</Link>
+          </li>
+          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+            <Link to="/allProduct">All Product</Link>
+          </li>
+          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+            <Link to="/">Sarisha Oil</Link>
+          </li>
+          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+            <Link to="/">Gawa Ghee</Link>
           </li>
 
       </ul>

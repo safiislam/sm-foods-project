@@ -24,8 +24,8 @@ const AllProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="card card-compact lg:w-80 bg-base-100 shadow-xl shadow-orange-100 hover:shadow-2xl my-12 "
-          >
+            className="card card-compact lg:w-80 bg-base-100 shadow-xl shadow-orange-100 hover:shadow-xl my-12 ">
+            <Link to={`/productDetails/${product.id}`}>
             <figure>
               <img
                 className="h-[250px] w-[80%] p-4 rounded-3xl "
@@ -74,6 +74,7 @@ const AllProducts = () => {
                 </p>
               </div>
             </div>
+            </Link>
           </div>
         ))}
       </div>
