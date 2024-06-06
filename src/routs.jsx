@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import AllProducts from './components/AllProducts';
 import ProductDetails from './components/ProductDetails';
+import Ghee from './components/Ghee';
 
 
 export const router = createBrowserRouter([
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
                     const singleProduct = data.find(details => details.id == params.id)
                     return singleProduct;
                 }
+            },
+            {
+                path: "/ghee",
+                element: <Ghee></Ghee>,
             },
 
             {

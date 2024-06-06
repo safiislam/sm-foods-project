@@ -41,7 +41,8 @@ const Navbar = () => {
           <Link to="/" className=" nav_a rounded-xl  cursor-pointer">Home</Link>
           <Link to="/allProduct" className=" nav_a rounded-xl  cursor-pointer">All Product</Link>
           <Link to="" className=" nav_a rounded-xl  cursor-pointer">Sarisha Oil</Link>
-          <Link to="" className=" nav_a rounded-xl  cursor-pointer">Gawa Ghee</Link>
+          <Link to="/ghee" className=" nav_a rounded-xl  cursor-pointer">Gawa Ghee</Link>
+          <Link to="" className=" nav_a rounded-xl  cursor-pointer">Honey</Link>
         </ul>
         {/* Mobile Navigation Icon */}
         <div onClick={handleNav} className="block md:hidden cursor-pointer">
@@ -93,6 +94,9 @@ const Navbar = () => {
           </li>
           <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
             <Link to="/">Gawa Ghee</Link>
+          </li>
+          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+            <Link to="/">Honey</Link>
           </li>
 
       </ul>
