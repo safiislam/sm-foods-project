@@ -132,32 +132,37 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center sm:text-left ">
           <div className="lg:col-span-2 px-3 lg:px-0 lg:pr-10">
             <h2 className="font-bold text-lg">SM Foods</h2>
-            <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর  গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।</p>
+            <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর  গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।
+
+
+
+
+            </p>
           </div>
 
           <div>
             <h5 className="font-semibold ">Quick Links</h5>
             <ul>
-              {quickLinks.map((qLink, i) => (
-                <QuickLinks qLink={qLink} key={i} />
-              ))}
+              <li>গ্রাহক সেবা</li>
+              <li>রিটার্ন পলিসি</li>
+              <li>রিফান্ড পলিসি</li>
             </ul>
           </div>
           
           <div>
             <h5 className="font-semibold">Quick Help</h5>
             <ul>
-              {jobInfo.map((job, i) => (
-                <JobInfo job={job} key={i} />
-              ))}
+              <li>Select</li>
+              <li>Service</li>
+              <li>Payment</li>
             </ul>
           </div>
           <div>
             <h5 className="font-semibold">Contact Us</h5>
             <ul>
-              {contactUs.map((contact, i) => (
-                <ContactUs contact={contact} key={i} />
-              ))}
+              <p>Nasirabad Properties Road 1, House-02 <br /> Chittagong, Bangladesh.</p>
+              <p>shariar@smitsolution.com.bd</p>
+              <p>+880 174212452</p>
             </ul>
           </div>
         </div>
