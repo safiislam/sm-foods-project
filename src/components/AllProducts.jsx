@@ -33,9 +33,9 @@ const AllProducts = () => {
                 alt="Product name"
               />
             </figure>
-            <div className="card-body">
+            <div className="card-body ">
               <h2 className="text-xl font-bold">{product.name}</h2>
-              <div className=" flex justify-between font-bold items-center">
+              <div className=" flex justify-between font-bold items-center py-2">
                 <p>Quantity: {product.quantity} </p>
 
                 <p className="font-bold">

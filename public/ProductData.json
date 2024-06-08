@@ -2,7 +2,8 @@
     {
     "id": 1, 
     "name": "Sarisha Oil", 
-    "price" : "900",
+    "price" : 900,
+    "discountPrice" : 1000,
     "category": "Oil",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://greenmartbd.net/storage/upload/product/phT3W2MDVDODfNv1lZ62K8qedUEAIHbtD5ouqvM5.png",
@@ -13,7 +14,8 @@
     {
     "id": 2, 
     "name": "Gawa Ghee / ঘি", 
-    "price" : "800",
+    "price" : 800,
+    "discountPrice" : 1000,
     "category": "Ghee",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://i.ibb.co/CsNtTfM/Untitleddesign-86-removebg-preview.png",
@@ -24,7 +26,8 @@
     {
     "id": 3, 
     "name": "Lichu Fuler Modhu / মধু", 
-    "price" : "1199",
+    "price" : 1199,
+    "discountPrice" : 1300,
     "category": "Honey",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png",
@@ -35,7 +38,8 @@
     {
     "id": 4, 
     "name": "Black Seed Honey / মধু", 
-    "price" : "999",
+    "price" : 999,
+    "discountPrice" : 1000,
     "category": "Honey",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://checklist.com.bd/public/uploads/all/9WPJJBgAE0MOIIBjQPWsQ3Necl6csixt8U9oB0ex.jpg",
@@ -46,7 +50,8 @@
     {
     "id": 5, 
     "name": "দেশি সরিষার তেল", 
-    "price" : "599",
+    "price" : 599,
+    "discountPrice" : 700,
     "category": "Oil",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png",
@@ -57,7 +62,8 @@
     {
     "id": 6, 
     "name": "গাওয়া ঘি", 
-    "price" : "699",
+    "price" : 699,
+    "discountPrice" : 800,
     "category": "Ghee",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3",
@@ -68,7 +74,8 @@
     {
         "id": 7, 
         "name": "Sarisha Oil", 
-        "price" : "900",
+        "price" : 900,
+        "discountPrice" : 1000,
         "category": "Oil",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://greenmartbd.net/storage/upload/product/phT3W2MDVDODfNv1lZ62K8qedUEAIHbtD5ouqvM5.png",
@@ -79,7 +86,8 @@
         {
         "id": 8, 
         "name": "Gawa Ghee / ঘি", 
-        "price" : "800",
+        "price" : 800,
+        "discountPrice" : 900,
         "category": "Ghee",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://i.ibb.co/CsNtTfM/Untitleddesign-86-removebg-preview.png",
@@ -90,7 +98,8 @@
         {
         "id": 9, 
         "name": "Lichu Fuler Modhu / মধু", 
-        "price" : "1199",
+        "price" : 1199,
+        "discountPrice" : 1300,
         "category": "Honey",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png",
@@ -101,7 +110,8 @@
         {
         "id": 10, 
         "name": "Black Seed Honey", 
-        "price" : "999",
+        "price" : 999,
+        "discountPrice" : 1100,
         "category": "Honey",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://checklist.com.bd/public/uploads/all/9WPJJBgAE0MOIIBjQPWsQ3Necl6csixt8U9oB0ex.jpg",
@@ -112,7 +122,8 @@
         {
         "id": 11, 
         "name": "দেশি সরিষার তেল", 
-        "price" : "599",
+        "price" : 599,
+        "discountPrice" : 700,
         "category": "Oil",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png",
@@ -123,7 +134,8 @@
         {
         "id": 12, 
         "name": "গাওয়া ঘি", 
-        "price" : "699",
+        "price" : 699,
+        "discountPrice" : 800,
         "category": "Ghee",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3",
