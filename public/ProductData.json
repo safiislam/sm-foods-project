@@ -8,7 +8,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://greenmartbd.net/storage/upload/product/phT3W2MDVDODfNv1lZ62K8qedUEAIHbtD5ouqvM5.png",
     "status": "Available",
-    "rating": "5.0",
+    "rating": 5.0,
     "quantity": "1 L"
     },
     {
@@ -20,7 +20,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://i.ibb.co/CsNtTfM/Untitleddesign-86-removebg-preview.png",
     "status": "Coming Soon",
-    "rating": "4.5",
+    "rating": 4.5,
     "quantity": "1 Kg"
     },
     {
@@ -32,7 +32,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png",
     "status": "Available",
-    "rating": "4.8",
+    "rating": 4.8,
     "quantity": "1 L"
     },
     {
@@ -44,7 +44,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://checklist.com.bd/public/uploads/all/9WPJJBgAE0MOIIBjQPWsQ3Necl6csixt8U9oB0ex.jpg",
     "status": "Coming Soon",
-    "rating": "4.9",
+    "rating": 4.9,
     "quantity": "1 L"
     },
     {
@@ -56,7 +56,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png",
     "status": "Available",
-    "rating": "4.6",
+    "rating": 4.6,
     "quantity": "1 L"
     },
     {
@@ -68,7 +68,7 @@
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
     "Image": "https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3",
     "status": "Available",
-    "rating": "4.4",
+    "rating": 4.4,
     "quantity": "500 g"
     },
     {
@@ -80,7 +80,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://greenmartbd.net/storage/upload/product/phT3W2MDVDODfNv1lZ62K8qedUEAIHbtD5ouqvM5.png",
         "status": "Available",
-        "rating": "5.0",
+        "rating": 5.0,
         "quantity": "1 L"
         },
         {
@@ -92,7 +92,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://i.ibb.co/CsNtTfM/Untitleddesign-86-removebg-preview.png",
         "status": "Coming Soon",
-        "rating": "4.5",
+        "rating": 4.5,
         "quantity": "1 Kg"
         },
         {
@@ -104,7 +104,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png",
         "status": "Available",
-        "rating": "4.8",
+        "rating": 4.8,
         "quantity": "1 L"
         },
         {
@@ -116,7 +116,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://checklist.com.bd/public/uploads/all/9WPJJBgAE0MOIIBjQPWsQ3Necl6csixt8U9oB0ex.jpg",
         "status": "Coming Soon",
-        "rating": "4.9",
+        "rating": 3.6,
         "quantity": "1 L"
         },
         {
@@ -128,7 +128,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png",
         "status": "Available",
-        "rating": "4.6",
+        "rating": 4.6,
         "quantity": "1 L"
         },
         {
@@ -140,7 +140,7 @@
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam vitae quia maxime, voluptate eaque alias et aut nam aspernatur expedita! Deserunt veniam saepe omnis quaerat vero id quos et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error suscipit fuga officiis sint totam deleniti beatae facilis modi sed? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsa.",
         "Image": "https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3",
         "status": "Available",
-        "rating": "4.4",
+        "rating": 4.4,
         "quantity": "500 g"
         }
 

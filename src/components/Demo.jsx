@@ -8,5 +8,3 @@ const {pathname} = useLocation();
     window.scroll(0,0);
   }, [pathname]);
 
-
-  

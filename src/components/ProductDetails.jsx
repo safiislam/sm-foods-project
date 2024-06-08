@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const ProductDetails = () => {
   const productDetails = useLoaderData();
@@ -10,6 +10,31 @@ const ProductDetails = () => {
 
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
+  };
+
+  // for stars
+  const StarRating = ({ rating }) => {
+    
+    const fullStars = Math.floor(rating);
+    
+    const hasHalfStar = rating % 1 >= 0.5;
+    
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+    // array of star components
+    const stars = [
+      ...Array(fullStars).fill(<FaStar className="text-orange-400" />),
+      hasHalfStar ? <FaStarHalfAlt className="text-orange-400" /> : null,
+      ...Array(emptyStars).fill(<FaRegStar className="text-orange-400" />),
+    ];
+
+    return (
+      <div className="flex items-center  gap-x-1 text-2xl mb-8">
+        {stars.map((star, index) => (
+          <span key={index}>{star}</span>
+        ))}
+      </div>
+    );
   };
 
   return (
@@ -52,21 +77,26 @@ const ProductDetails = () => {
               Tk {productDetails.discountPrice}
             </del>
           </div>
-          <p className="my-3 flex items-center gap-3">
+          {/* <p className="my-3 flex items-center gap-3">
             <span>
               <FaStar className="text-orange-500" />
             </span>{" "}
             {productDetails.rating}
-          </p>
+          </p> */}
+
+          <div className="flex gap-x-2">
+          <StarRating rating={productDetails.rating} /> 
+          <span className="text-lg font-semibold">({productDetails.rating})</span>
+          </div>
           <button
-            className="px-4 lg:px-12 py-2 rounded-md
+            className="px-4 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
             Buy Now
           </button>
           <button
-            className="px-4 lg:px-10 py-2 rounded-md
-                text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500"
+            className="px-4 lg:px-12 py-3 rounded-md
+                text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
             Add to Cart
           </button>
@@ -76,7 +106,9 @@ const ProductDetails = () => {
           <div className="py-4">
             <p className="text-lg font-semibold">Description</p>
             <p className="text-gray-700 inline">
-              {isExpanded ? productDetails.description : `${productDetails.description.slice(0, 200)}...`}
+              {isExpanded
+                ? productDetails.description
+                : `${productDetails.description.slice(0, 200)}...`}
             </p>
             <button
               onClick={toggleExpansion}
