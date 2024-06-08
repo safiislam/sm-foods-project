@@ -29,7 +29,7 @@ const ProductDetails = () => {
     ];
 
     return (
-      <div className="flex items-center  gap-x-1 text-2xl mb-8">
+      <div className="flex items-center  gap-x-1 lg:text-2xl text-xl mb-8">
         {stars.map((star, index) => (
           <span key={index}>{star}</span>
         ))}
@@ -41,8 +41,8 @@ const ProductDetails = () => {
     <div>
       <p className="text-center text-2xl font-semibold">Product Details</p>
 
-      <div className=" lg:w-[80%] mx-auto mt-4 mb-10 flex justify-between items-center">
-        <div className="lg:w-[35%] ">
+      <div className=" lg:w-[80%] mx-auto mt-4 mb-10 lg:flex justify-between items-center">
+        <div className="w-[70%] mx-auto lg:mx-0 lg:w-[35%] ">
           <img
             className="w-full"
             src={productDetails.Image}
@@ -50,14 +50,14 @@ const ProductDetails = () => {
           />
         </div>
 
-        <div className=" lg:w-[50%]">
-          <p className="lg:text-4xl font-semibold mb-5">
+        <div className=" lg:w-[50%] px-6 lg:px-0 mt-6 lg:mt-0 ">
+          <p className="lg:text-4xl text-2xl font-semibold mb-5">
             {productDetails.name}
           </p>
-          <p className="text-xl font-semibold mb-4">
+          <p className="lg:text-xl text-lg font-semibold mb-4">
             Quantity : {productDetails.quantity}
           </p>
-          <p className="text-xl font-semibold">
+          <p className="lg:text-xl text-lg font-semibold">
             In Stock :
             <span
               className={
@@ -70,10 +70,10 @@ const ProductDetails = () => {
             </span>
           </p>
           <div className="flex items-center gap-x-5">
-            <p className="text-3xl font-semibold my-6">
+            <p className="lg:text-3xl text-2xl font-semibold my-6">
               Tk {productDetails.price} ৳
             </p>
-            <del className="text-2xl text-gray-400">
+            <del className="lg:text-2xl text-xl text-gray-400">
               Tk {productDetails.discountPrice}
             </del>
           </div>
@@ -86,10 +86,10 @@ const ProductDetails = () => {
 
           <div className="flex gap-x-2">
           <StarRating rating={productDetails.rating} /> 
-          <span className="text-lg font-semibold">({productDetails.rating})</span>
+          <span className="lg:text-lg font-semibold ">({productDetails.rating})</span>
           </div>
           <button
-            className="px-4 lg:px-12 py-3 rounded-md
+            className="px-6 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
             Buy Now
