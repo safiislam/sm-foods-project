@@ -2,33 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
 
-const quickLinks = [
-  { value: "গ্রাহক সেবা", href: "#!" },
-  { value: "রিটার্ন পলিসি", href: "#!" },
-  { value: "রিফান্ড পলিসি", href: "#!" },
-];
 
 
-const jobInfo = [
-  { value: "Select", href: "#!" },
-  { value: "Service", href: "#!" },
-  { value: "Payment", href: "#!" },
-];
 
-const contactUs = [
-  {
-    value: "Nasirabad Properties Road 1, House-02 Chittagong, Bangladesh.",
-    href: "#!",
-  },
-  {
-    value: "shariar@smitsolution.com.bd",
-    href: "#!",
-  },
-  {
-    value: "+880 174212452",
-    href: "#!",
-  },
-];
 
 const navigations = [
   {
@@ -52,10 +28,6 @@ const sociaIcons = [
   },
   {
     icon: <FaTwitter />,
-    href: "#",
-  },
-  {
-    icon: <FaPinterest />,
     href: "#",
   },
   {
@@ -132,19 +104,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 text-center sm:text-left ">
           <div className="lg:col-span-2 px-3 lg:px-0 lg:pr-10">
             <h2 className="font-bold text-lg">SM Foods</h2>
-            <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর  গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।
-
-
-
-
-            </p>
+            <p>এসএম ফুডস-এ, আমাদের প্রতিটি কাজের মূলমন্ত্র হলো স্বাস্থ্য এবং স্থায়িত্বের প্রতিশ্রুতি। আমরা গর্বিত যে আমরা মানসম্পন্ন এবং নিরাপদ পণ্যগুলির একটি বৈচিত্র্যময় পরিসর সরবরাহ করতে পারি যা কেবলমাত্র আপনার শরীরকেই পুষ্টি দেয় না বরং পৃথিবীকে একটি স্বাস্থ্যকর  গ্রহে পরিণত করতে সহায়তা করে। এসএম ফুডস বিশুদ্ধ, প্রাকৃতিক উপাদানগুলির শক্তিতে বিশ্বাসী এবং সুস্থতার পরিসীমা বাড়াতে প্রতিশ্রুতিবদ্ধ।</p>
           </div>
 
           <div>
             <h5 className="font-semibold ">Quick Links</h5>
             <ul>
-              <li>গ্রাহক সেবা</li>
-              <li>রিটার্ন পলিসি</li>
+              <li className="mb-2">গ্রাহক সেবা</li>
+              <li className="mb-2">রিটার্ন পলিসি</li>
               <li>রিফান্ড পলিসি</li>
             </ul>
           </div>

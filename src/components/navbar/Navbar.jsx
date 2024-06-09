@@ -25,7 +25,7 @@ const Navbar = () => {
           alt=""
         />
         <h1 className=" font-Dancing  md:text-3xl text-xl  font-bold px-3 flex justify-center items-center text-orange-500 ">
-          SM FooD
+          SM FoodS
         </h1>
       </Link>
 

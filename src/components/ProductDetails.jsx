@@ -39,9 +39,9 @@ const ProductDetails = () => {
 
   return (
     <div>
-      <p className="text-center text-2xl font-semibold">Product Details</p>
+      {/* <p className="text-center text-2xl font-semibold">Product Details</p> */}
 
-      <div className=" lg:w-[80%] mx-auto mt-4 mb-10 lg:flex justify-between items-center">
+      <div className=" lg:w-[80%] mx-auto mt-4 lg:mt-10 mb-10 lg:flex justify-evenly items-center">
         <div className="w-[70%] mx-auto lg:mx-0 lg:w-[35%] ">
           <img
             className="w-full"
