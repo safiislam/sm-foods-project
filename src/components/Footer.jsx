@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaFacebook, FaTwitter, FaPinterest, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -142,9 +143,9 @@ const Footer = () => {
           </div>
           <div className="mt-1 lg:mt-0 ">
             <ul className="flex space-x-4 font-bold">
-              {navigations.map((item, i) => (
-                <NavigationItem item={item} key={i} />
-              ))}
+              <Link to="/">Home</Link>
+              <Link to="/about">About</Link>
+              <Link to="/contact">Contact</Link>
             </ul>
           </div>
           <div className="flex space-x-2 mt-1 lg:mt-0 ">
