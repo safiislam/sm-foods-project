@@ -35,7 +35,7 @@ const AllProducts = () => {
             </figure>
             <div className="card-body ">
               <h2 className="text-xl font-bold">{product.name}</h2>
-              <div className=" flex justify-between font-bold items-center py-2">
+              <div className=" flex justify-between font-bold items-center py-2 mb-2">
                 <p>Quantity: {product.quantity} </p>
 
                 <p className="font-bold">
@@ -56,7 +56,7 @@ const AllProducts = () => {
                 </div>
               </div>
               
-              <div className="flex justify-between items-center gap-10 mt-3 mb-5">
+              <div className="flex justify-between items-center gap-10 mt-3 mb-5 ">
                 <>
                   {/* {`/toys/${_id}`} */}
                   <Link to={``}>
@@ -69,9 +69,13 @@ const AllProducts = () => {
                   </Link>
                 </>
 
-                <p className=" text-right  font-semibold">
-                  Tk <span className="text-xl">{product.price} ৳</span> 
+                <div className="">
+                <p className=" text-right  font-semibold mb-1">
+                  Tk <span className="text-2xl">{product.price} ৳</span> 
                 </p>
+                <del className="text-center text-gray-400 text-lg"
+                >Tk {product.discountPrice}</del>
+                </div>
               </div>
             </div>
             </Link>
