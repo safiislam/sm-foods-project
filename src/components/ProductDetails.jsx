@@ -100,11 +100,11 @@ const ProductDetails = () => {
 
           <dialog id="my_modal_1" className="modal">
             <div className="modal-box">
-              <h3 className="font-bold text-lg text-center">
-                Please Fill In Your Order Details
+              <h3 className="font-bold text-lg text-center mt-4 w-[70%] lg:w-[90%] mx-auto ">
+              অর্ডার করতে আপনার তথ্য প্রদান করুন
               </h3>
 
-              <div className="bg-slate-100 mt-8 mb-5 flex justify-between items-center">
+              <div className=" bg-slate-100 mt-8 mb-5 flex justify-between items-center lg:mr-[6px]">
                 <div className=" flex items-center lg:text-lg lg:font-semibold">
                 <div className="w-[100px]">
                   <img className="w-full" src={productDetails.Image} alt="" />
@@ -164,7 +164,7 @@ const ProductDetails = () => {
                       type="number"
                       id="quantity"
                       placeholder="Enter Phone number"
-                      className="w-full p-2 border rounded-md focus:outline-none focus:border-orange-400"
+                      className="no-arrows w-full p-2 border rounded-md focus:outline-none focus:border-orange-400"
                       required
                     />
                   </div>

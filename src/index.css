@@ -9,3 +9,16 @@ border: 2px solid;
 .bb{
 border: 2px solid red;
 }
+
+
+@layer components {
+    .no-arrows::-webkit-outer-spin-button,
+    .no-arrows::-webkit-inner-spin-button {
+        @apply appearance-none;
+        margin: 0;
+    }
+
+    .no-arrows {
+        @apply appearance-none;
+    }
+}
