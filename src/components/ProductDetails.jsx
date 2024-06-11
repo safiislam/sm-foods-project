@@ -88,12 +88,115 @@ const ProductDetails = () => {
           <StarRating rating={productDetails.rating} /> 
           <span className="lg:text-lg font-semibold ">({productDetails.rating})</span>
           </div>
+
+          {/* Buy Now Button */}
           <button
+          onClick={() => document.getElementById("my_modal_1").showModal()}
             className="px-6 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
             Buy Now
           </button>
+
+          <dialog id="my_modal_1" className="modal">
+            <div className="modal-box">
+              <h3 className="font-bold text-lg text-center">
+                Please Fill In Your Order Details
+              </h3>
+
+              <div className="bg-slate-100 mt-8 mb-5 flex justify-between items-center">
+                <div className=" flex items-center lg:text-lg lg:font-semibold">
+                <div className="w-[100px]">
+                  <img className="w-full" src={productDetails.Image} alt="" />
+                </div>
+
+                <div className="pl-4">
+                  <p>{productDetails.name}</p>
+                  <p>{productDetails.quantity}</p>
+                </div>
+                </div>
+                <p className="font-semibold mr-4">Tk <span className="text-2xl">{productDetails.price}</span></p>
+              </div>
+
+              {/*  */}
+
+              <div className="max-w-md mx-auto mt-3 p-6 bg-white rounded-md shadow-md ">
+                <form>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="Name"
+                      className="block text-gray-700 font-bold mb-2"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Enter Your Full Name"
+                      className="w-full p-2 border rounded-md focus:outline-none focus:border-orange-400"
+                      // onChange={(e) => setProductName(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="Address"
+                      className="block text-gray-700 font-bold mb-2"
+                    >
+                      Address
+                    </label>
+                    <input
+                      type="text"
+                      id="address"
+                      placeholder="Enter Your Delivery Location."
+                      className="w-full p-2 border rounded-md focus:outline-none focus:border-orange-400"
+                      required
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      htmlFor="quantity"
+                      className="block text-gray-700 font-bold mb-2"
+                    >
+                      Mobile Number
+                    </label>
+                    <input
+                      type="number"
+                      id="quantity"
+                      placeholder="Enter Phone number"
+                      className="w-full p-2 border rounded-md focus:outline-none focus:border-orange-400"
+                      required
+                    />
+                  </div>
+                  
+                  <div className="text-center">
+                    <button
+                      type="submit"
+                      className="px-6 lg:px-12 py-2 rounded-md
+                text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
+                    >
+                      Confirm Order
+                    </button>
+                  </div>
+                </form>
+              </div>
+              {/*  */}
+              <div className="modal-action absolute top-0 right-5">
+                <form method="dialog">
+                  {/* if there is a button in form, it will close the modal */}
+                  <button
+                    type="submit"
+                    className="px-3 py-1 rounded-full bg-slate-300 shadow-xl text-black hover:text-white border-2 hover:bg-slate-900 focus:outline-none focus:shadow-outline-blue font-bold active:bg-orange-500"
+                  >
+                    X
+                  </button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+
+          {/*  */}
+
           <button
             className="px-4 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
