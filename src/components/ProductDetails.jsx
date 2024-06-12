@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { addToDb } from "../utils/setLocalStorage";
 
 const ProductDetails = () => {
   const productDetails = useLoaderData();
@@ -12,13 +13,16 @@ const ProductDetails = () => {
     setIsExpanded(!isExpanded);
   };
 
+  const handleAddtoCart = (product) => {
+    addToDb(product.id)
+  }
   // for stars
   const StarRating = ({ rating }) => {
-    
+
     const fullStars = Math.floor(rating);
-    
+
     const hasHalfStar = rating % 1 >= 0.5;
-    
+
     const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
 
     // array of star components
@@ -85,13 +89,13 @@ const ProductDetails = () => {
           </p> */}
 
           <div className="flex gap-x-2">
-          <StarRating rating={productDetails.rating} /> 
-          <span className="lg:text-lg font-semibold ">({productDetails.rating})</span>
+            <StarRating rating={productDetails.rating} />
+            <span className="lg:text-lg font-semibold ">({productDetails.rating})</span>
           </div>
 
           {/* Buy Now Button */}
           <button
-          onClick={() => document.getElementById("my_modal_1").showModal()}
+            onClick={() => document.getElementById("my_modal_1").showModal()}
             className="px-6 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
@@ -101,19 +105,19 @@ const ProductDetails = () => {
           <dialog id="my_modal_1" className="modal">
             <div className="modal-box">
               <h3 className="font-bold text-lg text-center mt-4 w-[70%] lg:w-[90%] mx-auto ">
-              অর্ডার করতে আপনার তথ্য প্রদান করুন
+                অর্ডার করতে আপনার তথ্য প্রদান করুন
               </h3>
 
               <div className=" bg-slate-100 mt-8 mb-5 flex justify-between items-center lg:mr-[6px]">
                 <div className=" flex items-center lg:text-lg lg:font-semibold">
-                <div className="w-[100px]">
-                  <img className="w-full" src={productDetails.Image} alt="" />
-                </div>
+                  <div className="w-[100px]">
+                    <img className="w-full" src={productDetails.Image} alt="" />
+                  </div>
 
-                <div className="pl-4">
-                  <p>{productDetails.name}</p>
-                  <p>{productDetails.quantity}</p>
-                </div>
+                  <div className="pl-4">
+                    <p>{productDetails.name}</p>
+                    <p>{productDetails.quantity}</p>
+                  </div>
                 </div>
                 <p className="font-semibold mr-4">Tk <span className="text-2xl">{productDetails.price}</span></p>
               </div>
@@ -168,7 +172,7 @@ const ProductDetails = () => {
                       required
                     />
                   </div>
-                  
+
                   <div className="text-center">
                     <button
                       type="submit"
@@ -198,6 +202,7 @@ const ProductDetails = () => {
           {/*  */}
 
           <button
+            onClick={() => handleAddtoCart(productDetails)}
             className="px-4 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >

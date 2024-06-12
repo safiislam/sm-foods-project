@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { addToDb } from "../utils/setLocalStorage";
 
 const Honey = () => {
   const [products, setProducts] = useState([]);
@@ -17,7 +18,10 @@ const Honey = () => {
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
-  console.log(products);
+  const handleAddToCart = (product) => {
+    console.log(product);
+    addToDb(product?.id)
+  }
 
   return (
     <div>
@@ -68,6 +72,7 @@ const Honey = () => {
                     {/* {`/toys/${_id}`} */}
                     <Link to={``}>
                       <button
+                        onClick={() => handleAddToCart(product)}
                         className="px-4 py-2 rounded-md
                 text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ..."
                       >

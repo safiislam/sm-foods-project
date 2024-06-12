@@ -1,18 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import "./Navbar.css";
 import { IoCart } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { getLocalData } from "../../utils/setLocalStorage";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [data, setData] = useState([])
+  const { setIsSidebarOpen, isSidebarOpen } = useContext(AuthContext)
 
   // Toggle function to handle the navbar's display
+  useEffect(() => {
+    const fetchData = async () => {
+      const localData = await getLocalData();
+      setData(localData);
+    };
+
+    fetchData();
+  }, [getLocalData, data]);
   const handleNav = () => {
     setNav(!nav);
   };
-
 
   return (
     <div className="flex  justify-between items-center w-[100%]  lg:max-w-[100%] mx-auto  px-5 md:px-24 py-4 md:py-4 text-black sticky top-0 z-20 bg-white ">
@@ -44,18 +55,18 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center gap-5 ">
-        <div className="relative cursor-pointer ">
+        <div onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="relative cursor-pointer ">
           <span className="bg-orange-500 absolute  px-[6px] rounded-full text-sm font-bold -top-3 left-5 text-white">
-            0
+            {data?.length}
           </span>
           <p className="font-bold flex  items-center text-black -mt-1">
-            
+
             <IoCart size={30} />
           </p>
         </div>
         <div>
           <p className=" font-bold cursor-pointer flex justify-center items-center  text-black  mb-1">
-            
+
             <FaUser size={24} />
           </p>
         </div>
@@ -77,21 +88,21 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
 
-          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/allProduct">All Product</Link>
-          </li>
-          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/sorishaOil">Sorisha Oil</Link>
-          </li>
-          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/ghee">Gawa Ghee</Link>
-          </li>
-          <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
-            <Link to="/honey">Honey</Link>
-          </li>
+        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+          <Link to="/allProduct">All Product</Link>
+        </li>
+        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+          <Link to="/sorishaOil">Sorisha Oil</Link>
+        </li>
+        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+          <Link to="/ghee">Gawa Ghee</Link>
+        </li>
+        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+          <Link to="/honey">Honey</Link>
+        </li>
 
       </ul>
     </div>
