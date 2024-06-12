@@ -20,7 +20,7 @@ const AllProducts = () => {
       </p>
 
       {/* product item */}
-      <div className="w-[90%] mx-auto gap- p-5 grid md:grid-cols-2 lg:grid-cols-4   lg:ps-4">
+      <div className=" w-[90%] mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:mt-8   lg:ps-8">
         {products.map((product) => (
           <div
             key={product.id}
@@ -35,7 +35,7 @@ const AllProducts = () => {
             </figure>
             <div className="card-body ">
               <h2 className="text-xl font-bold">{product.name}</h2>
-              <div className=" flex justify-between font-bold items-center py-2 mb-2">
+              <div className=" flex justify-between font-bold items-center py-2 mb-2 mt-2">
                 <p>Quantity: {product.quantity} </p>
 
                 <p className="font-bold">
@@ -56,13 +56,13 @@ const AllProducts = () => {
                 </div>
               </div>
               
-              <div className="flex justify-between items-center gap-10 mt-3 mb-5 ">
+              <div className="flex justify-between items-center gap-10 mb-5 ">
                 <>
                   {/* {`/toys/${_id}`} */}
                   <Link to={``}>
                     <button
                       className="px-4 py-2 rounded-md
-                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ..."
+                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500"
                     >
                       Add To Cart
                     </button>

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const ProductDetails = () => {
   const productDetails = useLoaderData();
   console.log(productDetails);
+
+  const modalRef = useRef(null);
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -41,6 +43,8 @@ const ProductDetails = () => {
     contactNumber: "",
     address: "",
     productName: productDetails.name,
+    productPrice: productDetails.price,
+    productQuantity: productDetails.quantity,
   });
 
   const handleChange = (e) => {
@@ -55,11 +59,20 @@ const ProductDetails = () => {
     e.preventDefault();
 
     console.log(formData);
+
+    // close Modal
+    if (modalRef.current) {
+      modalRef.current.close();
+    }
+
     // Reset form fields
     setFormData({
       name: "",
       contactNumber: "",
       address: "",
+      productName: productDetails.name,
+      productPrice: productDetails.price,
+      productQuantity: productDetails.quantity,
     });
   };
 
@@ -119,14 +132,15 @@ const ProductDetails = () => {
 
           {/* Buy Now Button */}
           <button
-            onClick={() => document.getElementById("my_modal_1").showModal()}
+            // onClick={() => document.getElementById("my_modal_1").showModal()}
+            onClick={() => modalRef.current.showModal()}
             className="px-6 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
             Buy Now
           </button>
 
-          <dialog id="my_modal_1" className="modal">
+          <dialog id="my_modal_1" className="modal" ref={modalRef}>
             <div className="modal-box">
               <h3 className="font-bold text-lg text-center mt-4 w-[70%] lg:w-[90%] mx-auto ">
                 অর্ডার করতে আপনার তথ্য প্রদান করুন
@@ -209,8 +223,6 @@ const ProductDetails = () => {
                       required
                     />
                   </div>
-
-                
 
                   <div className="text-center">
                     <button
