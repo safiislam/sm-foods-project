@@ -20,7 +20,8 @@ const AllProducts = () => {
       </p>
 
       {/* product item */}
-      <div className=" w-[90%] mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:mt-8   lg:ps-8">
+      {/* xl:grid-cols-4 */}
+      <div className=" w-[90%] mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl  lg:ps-8">
         {products.map((product) => (
           <div
             key={product.id}
