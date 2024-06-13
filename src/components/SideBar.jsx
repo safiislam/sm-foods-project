@@ -27,7 +27,7 @@ const SideBar = () => {
     const totalPrice = data.reduce((acc, cur) => acc + (cur.quantity * cur.price), 0)
     console.log(data)
     return (
-        <div className={`${isSidebarOpen ? 'fixed right-0 top-[55%] transform -translate-y-1/2 z-40' : 'fixed right-[-1000px] top-1/2 transform -translate-y-1/2 z-40'} overflow-hidden h-screen md:h-[85%] w-full md:w-[30%] transition-right duration-500 bg-white text-black  rounded-md`}>
+        <div className={`${isSidebarOpen ? 'fixed right-0 top-[55%] transform -translate-y-1/2 z-40' : 'fixed right-[-1000px] top-1/2 transform -translate-y-1/2 z-40'} overflow-hidden h-[90vh] md:h-[85%]  w-full md:w-[30%] transition-right duration-500 bg-white text-black  rounded-md`}>
             <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-8 border-b  bg-slate-100">
                     <p className="text-3xl font-bold bg-slate-">Shopping Cart</p>
