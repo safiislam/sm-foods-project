@@ -38,7 +38,7 @@ const Item = () => {
 
 const HomeCategory = () => {
     return (
-        <section className="b py-14 md:py-20 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
+        <section className=" py-14 md:py-20 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
 			<div className="absolute top-0 left-0 rotate-">
 				<img
 				className="w-[220px] opacity-25"

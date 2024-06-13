@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { addToDb } from "../utils/setLocalStorage";
 
 const ProductDetails = () => {
   const productDetails = useLoaderData();
@@ -13,6 +14,10 @@ const ProductDetails = () => {
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
   };
+
+  const handleAddtoCart = (product) => {
+    addToDb(product.id)
+  }
 
   // for stars
   const StarRating = ({ rating }) => {
@@ -254,6 +259,7 @@ const ProductDetails = () => {
           {/*  */}
 
           <button
+            onClick={() => handleAddtoCart(productDetails)}
             className="px-4 lg:px-12 py-3 rounded-md
                 text-white  font-bold lg:text-lg text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 mr-5"
           >
