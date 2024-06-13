@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { addToDb } from "../utils/setLocalStorage";
+import Swal from "sweetalert2";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
@@ -14,6 +15,13 @@ const AllProducts = () => {
   }, []);
   const handleAddToCart = (product) => {
     addToDb(product?.id)
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Add to Cart",
+      showConfirmButton: false,
+      timer: 1000
+    });
   }
 
 

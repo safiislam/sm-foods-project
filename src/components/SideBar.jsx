@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { addToDb, getLocalData, removeFromDb, removeOneFromDb } from "../utils/setLocalStorage";
+import Swal from "sweetalert2";
 
 
 const SideBar = () => {
@@ -14,7 +15,27 @@ const SideBar = () => {
         removeOneFromDb(item.id)
     }
     const handleDelete = (item) => {
-        removeFromDb(item.id)
+        Swal.fire({
+            title: "Are you sure for delete?",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Cart is Delete",
+                    showConfirmButton: false,
+                    icon: "success",
+                    timer: 1000
+                });
+                removeFromDb(item.id)
+            }
+        });
+
     }
     useEffect(() => {
         const fetchData = async () => {

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { addToDb } from "../utils/setLocalStorage";
+import Swal from "sweetalert2";
 
 const Ghee = () => {
 
@@ -19,8 +20,14 @@ const Ghee = () => {
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
   const handleAddToCart = (product) => {
-    console.log(product);
     addToDb(product?.id)
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Add to Cart",
+      showConfirmButton: false,
+      timer: 1000
+    });
   }
 
   return (
