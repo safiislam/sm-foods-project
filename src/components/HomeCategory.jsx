@@ -38,33 +38,25 @@ const Item = () => {
 
 const HomeCategory = () => {
     return (
-        <section className="py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
-			<div className="absolute top-0 right-0">
+        <section className="b py-14 md:py-20 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
+			<div className="absolute top-0 left-0 rotate-">
 				<img
-					src="https://cdn.easyfrontend.com/pictures/ecommerce/grid_10_shape1.png"
+				className="w-[220px] opacity-25"
+					src="https://c8.alamy.com/comp/2BX5KEN/pouring-oil-for-cooking-in-a-bottle-isolated-on-white-background-2BX5KEN.jpg"
 					alt=""
 				/>
 			</div>
 
 			<div className="container px-4 mx-auto relative">
-				<h2 className="text-[32px] md:text-5xl leading-tight font-bold text-center mb-12">
+				<p className="text-[32px] md:text-5xl leading-tight font-bold text-center mb-20 ">
 					Top Category
-				</h2>
+				</p>
 
-				<div className="relative">
+				<div className="relative ">
 					<div className="grid grid-cols-12 gap-6">
 						<Item />
 					</div>
-					<div className="flex items-center">
-						<button className="absolute top-1/2 left-0 md:-left-7 -translate-y-1/2 bg-white bg-opacity-50 shadow-xl text-pink-500 text-xl font-bold flex justify-center items-center rounded-full px-5 py-4 mr-4">
-							X
-						</button>
-
-						<button className="absolute top-1/2 right-0 md:-right-7 -translate-y-1/2 bg-white bg-opacity-50 shadow-xl text-pink-500 text-xl font-bold flex justify-center items-center rounded-full px-5 py-4">
-							{/* <FontAwesomeIcon icon={faChevronRight} /> */}
-                            X
-						</button>
-					</div>
+					
 				</div>
 			</div>
 		</section>
