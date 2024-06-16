@@ -120,15 +120,15 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div className="">
-            <h5 className="font-semibold">Quick Help</h5>
+          <div className=" ">
+            <h5 className="font-semibold ">Quick Help</h5>
             <ul>
               <li>Select</li>
               <li>Service</li>
               <li>Payment</li>
             </ul>
           </div>
-          <div className=" lg:w-[110%]">
+          <div className=" lg:w-[120%]">
             <h5 className="font-semibold mb-2">Contact Us</h5>
             <div className=" ">
           <p className="lg:text-lg "><FaLocationDot className="lg:text-xl  inline-block" /> Nasirabad Properties Road 1, House-2 </p>
