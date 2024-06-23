@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { addToDb } from "../utils/setLocalStorage";
+import Swal from "sweetalert2";
 
 const SorishaOil = () => {
 
@@ -17,12 +18,21 @@ const SorishaOil = () => {
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
-  console.log(products);
+  // console.log(products);
 
   const handleAddToCart = (product) => {
     console.log(product);
     addToDb(product?.id)
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Product Added to Cart",
+      showConfirmButton: false,
+      timer: 1000
+    });
   }
+
+
   return (
     <div>
       <p className=" text-center lg:font-bold lg:text-4xl mt-3  w-full bg-gradient-to-r from-orange-500 to-yellow-200 py-12 text-white uppercase">

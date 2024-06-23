@@ -20,7 +20,7 @@ const AllProducts = () => {
       icon: "success",
       title: "Product Added To Cart.",
       showConfirmButton: false,
-      timer: 1000
+      timer: 2000
     });
   }
 

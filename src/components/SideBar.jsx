@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { addToDb, getLocalData, removeFromDb, removeOneFromDb } from "../utils/setLocalStorage";
 import { RxCross2 } from "react-icons/rx";
+import Swal from "sweetalert2";
 
 
 const SideBar = () => {
@@ -14,9 +15,31 @@ const SideBar = () => {
     const handleRemoveCart = (item) => {
         removeOneFromDb(item.id)
     }
+
     const handleDelete = (item) => {
-        removeFromDb(item.id)
+        Swal.fire({
+            title: "Are You Sure For Remove?",
+            // text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "YES"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Product Remove",
+                    text: "Product Remove From Cart Successfully.",
+                    showConfirmButton: false,
+                    icon: "success",
+                    timer: 2000
+                });
+                removeFromDb(item.id)
+            }
+        });
+
     }
+
     useEffect(() => {
         const fetchData = async () => {
             const localData = await getLocalData();
@@ -25,13 +48,13 @@ const SideBar = () => {
         fetchData();
     }, [getLocalData, data]);
     const totalPrice = data.reduce((acc, cur) => acc + (cur.quantity * cur.price), 0)
-    console.log(data)
+    // console.log(data)
     return (
         <div className={`${isSidebarOpen ? 'fixed right-0 top-[55%] transform -translate-y-1/2 z-40' : 'fixed right-[-1000px] top-1/2 transform -translate-y-1/2 z-40'} overflow-hidden h-[90vh] md:h-[85%]  w-full md:w-[30%] transition-right duration-500 bg-white text-black  rounded-md`}>
             <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-8 border-b  bg-slate-100">
                     <p className="text-3xl font-bold bg-slate-">Shopping Cart</p>
-                    <span onClick={() => setIsSidebarOpen(false)} className="text-3xl cursor-pointer"><RxCross2/></span>
+                    <span onClick={() => setIsSidebarOpen(false)} className="text-3xl cursor-pointer font-bold"><RxCross2/></span>
                 </div>
                 <div className="flex-1 overflow-y-auto px-4 py-4 border-l">
                     {
