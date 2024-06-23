@@ -8,23 +8,6 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 
 
 
-
-
-const navigations = [
-  {
-    value: "Home",
-    href: "#!",
-  },
-  {
-    value: "About",
-    href: "#!",
-  },
-  {
-    value: "Contact",
-    href: "#!",
-  },
-];
-
 const sociaIcons = [
   {
     icon: <FaFacebook />,
@@ -142,7 +125,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left ">
           <div>
             <p className="mb-1">
-              Copyright &copy; Easy Frontend, All rights reserved
+              Copyright &copy; SMFoods, All rights reserved
             </p>
           </div>
           <div className="mt-1 lg:mt-0 ">
