@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='relative '>
       <div className='bg-orange-100 rounded-b-[780px] pt-4 md:pt-0'>
-      <div className=' lg:mt-5 md:w-[85%] mx-auto md:pb-[350px] pb-[450px] md:mb-[450px] mb-[400px]'>
+      <div className=' lg:mt-5 md:w-[85%] mx-auto md:pb-[350px] pb-[450px] md:mb-[450px] mb-[300px]'>
       <div className=' px-3 md:px-0 md:flex gap-6 items-center justify-between'>
       <div className=' md:w-[50%]'>
         <p className='md:text-5xl text-3xl mt-10 md:mt-0 font-semibold mb-3'>OUR STORY</p>
@@ -32,9 +32,9 @@ const About = () => {
           <p className='md:text-5xl text-3xl mb-9 text-center font-semibold'>Our Values</p>
 
           <div>
-            <p className='flex  gap-3 md:text-lg font-semibold mb-12'><FcOk size={40}className='' />  We ensure that all our products meet the highest standards of quality and purity.</p>
-            <p className='flex  gap-3 md:text-lg font-semibold mb-12'><FcOk size={40} className='text-3xl' />  We are committed to environmentally-friendly practices and sustainable sourcing.</p>
-            <p className='flex  gap-3 md:text-lg font-semibold mb-12'><FcOk size={60}className='text-3xl' />  Customer satisfaction is our priority. We strive to offer excellent customer service and a seamless shopping experience.</p>
+            <p className='flex  gap-3 md:text-lg font-semibold md:mb-12 mb-5'><FcOk size={40}className='' />  We ensure that all our products meet the highest standards of quality and purity.</p>
+            <p className='flex  gap-3 md:text-lg font-semibold md:mb-12 mb-5'><FcOk size={40} className='text-3xl' />  We are committed to environmentally-friendly practices and sustainable sourcing.</p>
+            <p className='flex  gap-3 md:text-lg font-semibold md:mb-12 mb-5'><FcOk size={60}className='text-3xl' />  Customer satisfaction is our priority. We strive to offer excellent customer service and a seamless shopping experience.</p>
             <p className='flex  gap-3 md:text-lg font-semibold'><FcOk size={35}className='text-3xl' />  We believe in being open and honest about our products and practices.</p>
           </div>
       </div>
