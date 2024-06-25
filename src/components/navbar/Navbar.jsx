@@ -64,11 +64,11 @@ const Navbar = () => {
             <IoCart size={30} />
           </p>
         </div>
+        {/* User Icon*/}
         <div>
-          <p className=" font-bold cursor-pointer flex justify-center items-center  text-black  mb-1">
-
+          {/* <p className="b font-bold cursor-pointer flex justify-center items-center  text-black  mb-1">
             <FaUser size={24} />
-          </p>
+          </p> */}
         </div>
         <button className="bg-gradient-to-r from-orange-500 to-yellow-300 px-6 lg:py-2 py-2 rounded-md text-white font-semibold shadow-md">Login</button>
       </div>
