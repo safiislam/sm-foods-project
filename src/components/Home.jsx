@@ -50,7 +50,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" flex justify-evenly items-center md:py-10 bg-slate-100">
+            <div className=" flex justify-evenly items-center md:py-32 bg-slate-50">
               <img
                 src="https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png"
                 alt="Mustard Oil"
@@ -82,7 +82,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-		  <div className=" flex justify-evenly items-center md:py-10 bg-slate-100">
+		  <div className=" flex justify-evenly items-center md:py-32 bg-slate-50">
               <img
                 src="https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png"
                 alt="Mustard Oil"
@@ -114,7 +114,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-		  <div className=" flex justify-evenly items-center md:py-10 bg-slate-100">
+		  <div className=" flex justify-evenly items-center md:py-32 bg-slate-50">
               <img
                 src="https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3"
                 alt="Ghee"
