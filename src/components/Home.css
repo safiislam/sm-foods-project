@@ -1,0 +1,14 @@
+/* Custom CSS for Swiper navigation arrows */
+.swiper-button-prev, .swiper-button-next {
+    color: #ff0000; 
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #ff0000; 
+  }
+  
+  /* Custom CSS for Swiper pagination bullets when active */
+  .swiper-pagination-bullet-active {
+    background-color: #ff5100; 
+  }
+  
