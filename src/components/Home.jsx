@@ -22,10 +22,10 @@ const Home = () => {
           slidesPerView={1}
           loop={true}
           centeredSlides={true}
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: true,
           }}
@@ -54,11 +54,11 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-slate-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
               <img
                 src="https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png"
                 alt="Mustard Oil"
-                className="md:w-[440px] w-[90%] mx-auto md:mx-0  rounded-xl shadow-lg "
+                className="md:w-[440px] w-[90%] mx-auto md:mx-0  "
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
@@ -92,11 +92,11 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-slate-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
               <img
                 src="https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png"
                 alt="Mustard Oil"
-                className="md:w-[440px] w-[90%] mx-auto md:mx-0 rounded-xl shadow-lg"
+                className="md:w-[440px] w-[90%] mx-auto md:mx-0 rounded-x shadow-m"
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
@@ -129,11 +129,11 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-slate-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
               <img
                 src="https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3"
                 alt="Mustard Oil"
-                className="md:w-[440px] w-[90%] mx-auto md:mx-0 rounded-xl shadow-lg "
+                className="md:w-[440px] w-[90%] mx-auto md:mx-0 "
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
