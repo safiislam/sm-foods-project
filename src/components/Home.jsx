@@ -22,10 +22,10 @@ const Home = () => {
           slidesPerView={1}
           loop={true}
           centeredSlides={true}
-          // autoplay={{
-          //   delay: 3500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
           }}
@@ -34,22 +34,22 @@ const Home = () => {
           className="mySwiper"
         >
           <SwiperSlide className=" ">
-            <div className="w-[80%] mt-32 mx-auto h-full">
+            <div className=" w-[90%] md:mt-32 mt-10 mx-auto h-full md:flex items-center gap-4">
+              <div>
               <h2 className="text-3xl font-bold md:text-[70px] leading-none mb-6 font-serif">
                 SM FOODS
               </h2>
-              <p className="text-[22px] leading-normal opacity-80">
+              <p className="text-[22px] leading-normal opacity-80 ">
                 This is a factor in the economy of a nation, and the
-                administration takes the major choices.
+                administration takes the major choices. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a provident sapiente porro culpa illum quidem, nobis suscipit quasi hic unde quod nesciunt. Sequi itaque quas ipsam magni ea placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit!
               </p>
               <div>
-                <a
-                  href="#!"
-                  className="bg-white dark:bg-slate-900 text-indigo-900 dark:text-white shadow-xl rounded py-3 px-8 text-xl mt-6 md:mt-12 inline-block "
-                >
-                  Order Now
-                </a>
+              <button className="px-8 rounded-ss-xl rounded-ee-xl py-3  mt-10 text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-400 hover:from-yellow-500 hover:to-orange-500 shadow-xl">
+                    Shop Now
+                  </button>
               </div>
+              </div>
+              <img className="md:w-[50%] mt-16 md:mt-0" src="https://i.ibb.co/fnHVtV7/Whats-App-Image-2024-06-25-at-2-41-29-AM.jpg" alt="" />
             </div>
           </SwiperSlide>
 

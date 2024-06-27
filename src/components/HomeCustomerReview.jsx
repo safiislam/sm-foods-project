@@ -14,7 +14,7 @@ const HomeCustomerReview = () => {
     return (
         <div className=' md:w-[85%] mx-auto mb-20'>
             <p className='md:text-5xl text-3xl font-semibold md:mb-10 mb-6 text-center'>Our Happy Customers</p>
-            <p className='md:w-[60%] w-[90%] mx-auto font-semibold mb-16 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit nemo voluptates quas adipisci accusantium facere delectus vero dignissimos doloribus.</p>
+            <p className='md:w-[50%] w-[90%] mx-auto mb-16 text-center text-slate-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit nemo voluptates quas adipisci accusantium facere delectus vero dignissimos doloribus.</p>
           <Swiper
         slidesPerView={2}
         spaceBetween={80}
@@ -29,15 +29,15 @@ const HomeCustomerReview = () => {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         breakpoints={{
-            0: {  // when window width is >= 0px
+            0: {  
                 slidesPerView: 1,
                 spaceBetween: 20
             },
-            640: {  // when window width is >= 640px
+            640: {  
                 slidesPerView: 2,
                 spaceBetween: 40
             },
-            768: {  // when window width is >= 768px
+            768: { 
                 slidesPerView: 2,
                 spaceBetween: 80
             }
