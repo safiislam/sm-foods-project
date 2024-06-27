@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -5,35 +6,92 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { FaRegStarHalfStroke } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa6";
 import { Pagination, Autoplay } from 'swiper/modules';
 
 const HomeCustomerReview = () => {
     return (
         <div className=' md:w-[85%] mx-auto mb-20'>
-            <p className='text-5xl font-semibold mb-12 text-center'>Our Happy Customers</p>
+            <p className='md:text-5xl font-semibold mb-12 text-center'>Our Happy Customers</p>
           <Swiper
         slidesPerView={2}
         spaceBetween={80}
         loop={true}
-        //   centeredSlides={true}
-        //   autoplay={{
-        //     delay: 3500,
-        //     disableOnInteraction: false,
-        //   }}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination, Autoplay]}
         className="mySwiper"
+        breakpoints={{
+            0: {  // when window width is >= 0px
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            640: {  // when window width is >= 640px
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+            768: {  // when window width is >= 768px
+                slidesPerView: 2,
+                spaceBetween: 80
+            }
+        }}
       >
         <SwiperSlide>
-            <div>
-                <div>
-                    <p className='mb-16 py-9 px-3 rounded-lg text-lg text-center bg-slate-100 shadow-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique molestiae laborum voluptates explicabo vel?</p>
+        <div className="w-[90%] mx-auto md:w-full md:mx-0 bg-zinc-100 rounded-xl shadow-xl mb-16 hover:-translate-y-1 h-full duration-300 px-6 py-4">
+            <div className="mt-4">
+                <div className="flex justify-between items-center mb-6">
+                    <div className="flex items-center">
+                        <div className="mr-2">
+                            
+                            <img className="max-w-full h-auto rounded-full border" width="47" src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg" alt="" />
+                        </div>
+                        <div>
+                            <h5 className="text-xl break-all font-medium">Elon Musk </h5>
+                        </div>
+                    </div>
+                    <div className='flex gap-x-2 md:text-2xl text-yellow-400'>
+                    <FaStar  />
+                    <FaStar  />
+                    <FaStar  />
+                    <FaStar  />
+                    <FaRegStarHalfStroke/>
+                    </div>
                 </div>
-                <img className="w-[100px] h-[100px] rounded-full" src="https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?s=612x612&w=0&k=20&c=kPvoBm6qCYzQXMAn9JUtqLREXe9-PlZyMl9i-ibaVuY=" alt="" />
-                <p>Kim Jon</p>
+                <p className="leading-[1.8] opacity-80 mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique necessitatibus est deserunt laboriosam soluta unde corrupti tempora praesentium. Minus voluptatem, ducimus dolor ab repudiandae necessitatibus enim! Quasi nulla aliquam sunt.</p>
             </div>
+        </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className=" w-[90%] mx-auto md:w-full md:mx-0 bg-zinc-100 rounded-xl shadow-xl mb-16 hover:-translate-y-1 h-full duration-300 px-6 py-4">
+            <div className="mt-4">
+                <div className="flex justify-between items-center mb-6">
+                    <div className="flex items-center">
+                        <div className="mr-2">
+                            
+                            <img className="max-w-full h-auto rounded-full border" width="47" src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg" alt="" />
+                        </div>
+                        <div>
+                            <h5 className="text-xl break-all font-medium">Kim Jon Wwn </h5>
+                        </div>
+                    </div>
+                    <div className='flex gap-x-2 md:text-2xl text-yellow-400'>
+                    <FaStar  />
+                    <FaStar  />
+                    <FaStar  />
+                    <FaStar  />
+                    <FaRegStarHalfStroke/>
+                    </div>
+                </div>
+                <p className="leading-[1.8] opacity-80 mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique necessitatibus est deserunt laboriosam soluta unde corrupti tempora praesentium. Minus voluptatem, ducimus dolor ab repudiandae necessitatibus enim! Quasi nulla aliquam sunt.</p>
+            </div>
+        </div>
         </SwiperSlide>
 
         <SwiperSlide>
@@ -44,43 +102,7 @@ const HomeCustomerReview = () => {
                 <img className="w-[80px] rounded-full" src="" alt="" />
             </div>
         </SwiperSlide>
-
-        <SwiperSlide>
-            <div>
-                <div>
-                    <p className=' py-9 px-3 rounded-lg text-lg text-center bg-slate-100 shadow-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique molestiae laborum voluptates explicabo vel?</p>
-                </div>
-                <img className="w-[80px] rounded-full" src="" alt="" />
-            </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <div>
-                <div>
-                    <p className=' py-9 px-3 rounded-lg text-lg text-center bg-slate-100 shadow-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique molestiae laborum voluptates explicabo vel?</p>
-                </div>
-                <img className="w-[80px] rounded-full" src="" alt="" />
-            </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <div>
-                <div>
-                    <p className=' py-9 px-3 rounded-lg text-lg text-center bg-slate-100 shadow-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique molestiae laborum voluptates explicabo vel?</p>
-                </div>
-                <img className="w-[80px] rounded-full" src="" alt="" />
-            </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-            <div>
-                <div>
-                    <p className=' py-9 px-3 rounded-lg text-lg text-center bg-slate-100 shadow-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique molestiae laborum voluptates explicabo vel?</p>
-                </div>
-                <img className="w-[80px] rounded-full" src="" alt="" />
-            </div>
-        </SwiperSlide>
-
+        
       </Swiper>
         </div>
     );
