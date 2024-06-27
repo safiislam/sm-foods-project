@@ -13,7 +13,8 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const HomeCustomerReview = () => {
     return (
         <div className=' md:w-[85%] mx-auto mb-20'>
-            <p className='md:text-5xl font-semibold mb-12 text-center'>Our Happy Customers</p>
+            <p className='md:text-5xl text-3xl font-semibold md:mb-10 mb-6 text-center'>Our Happy Customers</p>
+            <p className='md:w-[60%] w-[90%] mx-auto font-semibold mb-16 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit nemo voluptates quas adipisci accusantium facere delectus vero dignissimos doloribus.</p>
           <Swiper
         slidesPerView={2}
         spaceBetween={80}
@@ -102,7 +103,7 @@ const HomeCustomerReview = () => {
                 <img className="w-[80px] rounded-full" src="" alt="" />
             </div>
         </SwiperSlide>
-        
+
       </Swiper>
         </div>
     );
