@@ -13,7 +13,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const HomeCustomerReview = () => {
     return (
         <div className=' md:w-[85%] mx-auto mb-20'>
-            <p className='md:text-5xl text-3xl font-semibold md:mb-10 mb-6 text-center'>Our Happy Customers</p>
+            <p className='md:text-5xl text-3xl font-semibold md:mb-5 mb-6 text-center'>Our Happy Customers</p>
             <p className='md:w-[50%] w-[90%] mx-auto mb-16 text-center text-slate-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit nemo voluptates quas adipisci accusantium facere delectus vero dignissimos doloribus.</p>
           <Swiper
         slidesPerView={2}

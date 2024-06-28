@@ -15,9 +15,11 @@ const HomeCategory = () => {
 			</div> */}
 
       <div className="container px-4 mx-auto relative">
-        <p className="text-[32px] md:text-5xl leading-tight font-bold text-center mb-32 ">
+        <p className="text-[32px] md:text-5xl leading-tight font-bold text-center mb-8 ">
           Top Category
         </p>
+
+        <p className=' md:w-[50%] w-[90%] mx-auto mb-20 text-center text-slate-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit nemo voluptates quas adipisci accusantium facere delectus vero dignissimos doloribus.</p>
 
         <div className="relative ">
           <div className="grid grid-cols-12 md:gap-x-16 ">

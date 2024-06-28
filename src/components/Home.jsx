@@ -11,6 +11,7 @@ import "./Home.css";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import HomeCustomerReview from "./HomeCustomerReview";
+import HomeProduct from "./HomeProduct";
 
 const Home = () => {
   return (
@@ -77,7 +78,7 @@ const Home = () => {
                     <li className="mb-2 font-semibold">✅ Organic</li>
                   </ul>
 
-                  <button className="px-8 rounded-ss-xl rounded-ee-xl py-3  mt-6 text-white  font-bold text-base bg-gradient-to-r from-orange-700 to-yellow-400 hover:from-yellow-500 hover:to-orange-700">
+                  <button className="px-8 rounded-ss-xl rounded-ee-xl py-3  mt-6 text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-400 hover:from-yellow-400 hover:to-orange-600">
                     Shop Now
                   </button>
                 </div>
@@ -152,7 +153,7 @@ const Home = () => {
                     <li className="mb-2 font-semibold">✅ Organic</li>
                   </ul>
 
-                  <button className="px-8 rounded-ss-xl rounded-ee-xl py-3  mt-6 text-white  font-bold text-base bg-gradient-to-r from-orange-700 to-yellow-400 hover:from-yellow-500 hover:to-orange-700">
+                  <button className="px-8 rounded-ss-xl rounded-ee-xl py-3  mt-6 text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-400 hover:from-yellow-400 hover:to-orange-500">
                     Shop Now
                   </button>
                 </div>
@@ -175,7 +176,7 @@ const Home = () => {
 
       {/* Our Popular Product */}
       <section>
-
+        <HomeProduct></HomeProduct>
       </section>
 
       {/* Customer review */}
