@@ -74,23 +74,28 @@ const Ghee = () => {
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center gap-10 mt-3 mb-5">
+                <div className="flex justify-between items-center gap-10 mt-3 mb-3 ">
                   <>
+                    {/* safi */}
                     {/* {`/toys/${_id}`} */}
                     <Link to={``}>
                       <button
                         onClick={() => handleAddToCart(product)}
                         className="px-4 py-2 rounded-md
-                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ..."
-                      >
+                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ">
                         Add To Cart
                       </button>
                     </Link>
                   </>
 
-                  <p className=" text-right  font-semibold">
-                    Tk <span className="text-xl">{product.price} ৳</span>
-                  </p>
+                  <div className="">
+                    <p className=" text-right  font-semibold mb-1">
+                      Tk <span className="text-2xl">{product.price} ৳</span>
+                    </p>
+                    <del className="text-center text-gray-500 text-lg">
+                      Tk {product.discountPrice}
+                    </del>
+                  </div>
                 </div>
               </div>
             </Link>

@@ -68,7 +68,7 @@ const AllProducts = () => {
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center gap-10 mt-3 mb-5 ">
+                <div className="flex justify-between items-center gap-10 mb-3 ">
                   <>
                     {/* safi */}
                     {/* {`/toys/${_id}`} */}

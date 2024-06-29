@@ -37,7 +37,7 @@ const HomeProduct = () => {
                   alt="Product name"
                 />
               </figure>
-              <div className="card-body  bg-gray-100 rounded-b-xl">
+              <div className="card-body  bg-gray-100 rounded-b-xl ">
                 <h2 className="text-xl font-bold">{product.name}</h2>
                 <div className=" flex justify-between font-bold items-center py-2">
                   <p>Quantity: {product.quantity} </p>
