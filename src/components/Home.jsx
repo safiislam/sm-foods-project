@@ -54,13 +54,12 @@ const Home = () => {
             </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          <SwiperSlide >
             <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-5">
               <img
                 src="https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png"
                 alt="Mustard Oil"
-                className="md:w-[440px] w-[90%] mx-auto md:mx-0  "
-              />
+                className="md:w-[440px] w-[90%] mx-auto md:mx-0 "/>
 
               {/* Middle Section: Product Image and Key Benefits */}
               <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-gray-50 shadow-md rounded-lg overflow-hidden mb-8 relative">

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
-
 const HomeProduct = () => {
   const [products, setProducts] = useState([]);
 
@@ -28,12 +27,12 @@ const HomeProduct = () => {
         {products.slice(0, 6).map((product) => (
           <div
             key={product.id}
-            className="card card-compact lg:w-80 bg-base-100 shadow-lg shadow-orange-100 hover:shadow-xl mt-12 mb-20 border"
+            className=" card card-compact lg:w-80 bg-base-100 shadow-lg shadow-orange-100 hover:shadow-xl mt-12 mb-20 border group"
           >
             <Link to={`/productDetails/${product.id}`}>
               <figure>
                 <img
-                  className="h-[230px] w-[70%] p-4 rounded-3xl "
+                  className="h-[230px] w-[70%] p-4 rounded-3xl transition duration-300 ease-in-out group-hover:scale-110"
                   src={product.Image}
                   alt="Product name"
                 />
@@ -62,7 +61,7 @@ const HomeProduct = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-                  <p className=" font-semibold">
+                  <p className=" font-bold">
                     Tk <span className="text-2xl">{product.price} ৳</span>
                   </p>
                   <del className=" text-gray-500 text-xl">
@@ -73,7 +72,18 @@ const HomeProduct = () => {
             </Link>
           </div>
         ))}
+
+        
       </div>
+
+      <div className=" text-center mb-20">
+        <Link to="/allProduct"
+          className=" md:px-16 px-12 py-3 rounded-md
+                text-white md:text-xl font-bold  bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 "
+        >
+          Show ALL 
+        </Link>
+        </div>
     </div>
   );
 };
