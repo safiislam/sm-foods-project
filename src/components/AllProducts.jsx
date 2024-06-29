@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const AllProducts = () => {
   const [products, setProducts] = useState([]);
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("ProductData.json")
@@ -14,16 +14,15 @@ const AllProducts = () => {
       .then((data) => setProducts(data));
   }, []);
   const handleAddToCart = (product) => {
-    addToDb(product?.id)
+    addToDb(product?.id);
     Swal.fire({
       position: "center",
       icon: "success",
       title: "Product Added To Cart.",
       showConfirmButton: false,
-      timer: 2000
+      timer: 2000,
     });
-  }
-
+  };
 
   return (
     <div>
@@ -36,7 +35,8 @@ const AllProducts = () => {
         {products.map((product) => (
           <div
             key={product.id}
-            className="card card-compact lg:w-80 bg-base-100 shadow-lg shadow-orange-100 hover:shadow-xl my-12 ">
+            className="card card-compact lg:w-80 bg-base-100 shadow-lg shadow-orange-100 hover:shadow-xl my-12 border"
+          >
             <Link to={`/productDetails/${product.id}`}>
               <figure>
                 <img
@@ -76,8 +76,7 @@ const AllProducts = () => {
                       <button
                         onClick={() => handleAddToCart(product)}
                         className="px-4 py-2 rounded-md
-                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ..."
-                      >
+                text-white  font-bold text-base bg-gradient-to-r from-orange-500 to-yellow-300 hover:from-yellow-300 hover:to-orange-500 ">
                         Add To Cart
                       </button>
                     </Link>
@@ -87,8 +86,9 @@ const AllProducts = () => {
                     <p className=" text-right  font-semibold mb-1">
                       Tk <span className="text-2xl">{product.price} ৳</span>
                     </p>
-                    <del className="text-center text-gray-400 text-lg"
-                    >Tk {product.discountPrice}</del>
+                    <del className="text-center text-gray-500 text-lg">
+                      Tk {product.discountPrice}
+                    </del>
                   </div>
                 </div>
               </div>
@@ -96,6 +96,7 @@ const AllProducts = () => {
           </div>
         ))}
       </div>
+      
     </div>
   );
 };

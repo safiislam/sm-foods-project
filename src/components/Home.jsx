@@ -55,7 +55,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-5">
               <img
                 src="https://basshopbd.com/wp-content/uploads/2022/09/d25822560b58a13c05c54e98d042399b_1000x1000.png"
                 alt="Mustard Oil"
@@ -63,7 +63,7 @@ const Home = () => {
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
-              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-white shadow-lg rounded-lg overflow-hidden mb-8 relative">
+              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-gray-50 shadow-md rounded-lg overflow-hidden mb-8 relative">
                 <div className="py-8 md:pl-10 pl-4 ">
                   <p className="md:text-5xl text-3xl font-bold text-yellow-500 md:mb-10 mb-6">
                     দেশি সরিষার তেল
@@ -93,7 +93,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-5">
               <img
                 src="https://www.harniva.com/assets/backend/admin/plugins/source/hakkimizda/kalitelibal.png"
                 alt="Mustard Oil"
@@ -101,7 +101,7 @@ const Home = () => {
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
-              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-white shadow-lg rounded-lg overflow-hidden mb-8 relative">
+              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-gray-50 shadow-md rounded-lg overflow-hidden mb-8 relative">
                 <div className="py-8 md:pl-10 pl-4 ">
                   <p className="md:text-5xl text-3xl font-bold text-yellow-500 md:mb-10 mb-6">
                     Honey / মধু
@@ -130,7 +130,7 @@ const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-50">
+            <div className=" md:flex justify-evenly items-center md:py-24 py-6 bg-gray-5">
               <img
                 src="https://media.e-valy.com/cms/products/images/f4b3265d-df5e-4835-add4-0cd2654235d3"
                 alt="Mustard Oil"
@@ -138,7 +138,7 @@ const Home = () => {
               />
 
               {/* Middle Section: Product Image and Key Benefits */}
-              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-white shadow-lg rounded-lg overflow-hidden mb-8 relative">
+              <div className=" w-[90%] mx-auto md:mx-0 mt-10 md:mt-0 w md:w-[45%] max-w-4xl flex flex-col md:flex-row md:items-center bg-gray-50 shadow-md rounded-lg overflow-hidden mb-8 relative">
                 <div className="py-8 md:pl-10 pl-4 ">
                   <p className="md:text-5xl text-3xl font-bold text-yellow-500 md:mb-10 mb-6">
                     গাওয়া ঘি / Gawa Ghee
