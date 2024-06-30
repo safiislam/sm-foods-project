@@ -18,7 +18,6 @@ const SorishaOil = () => {
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
-  // console.log(products);
 
   const handleAddToCart = (product) => {
     console.log(product);
