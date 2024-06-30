@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { useLoaderData } from "react-router-dom";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { addToDb } from "../utils/setLocalStorage";
+import Swal from "sweetalert2";
 
 const ProductDetails = () => {
   const productDetails = useLoaderData();
@@ -78,6 +79,15 @@ const ProductDetails = () => {
       productName: productDetails.name,
       productPrice: productDetails.price,
       productQuantity: productDetails.quantity,
+    });
+
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Order Confirmed",
+      text: "শীঘ্রই একজন প্রতিনিধি আপনার সাথে যোগাযোগ করবে।",
+      showConfirmButton: false,
+      timer: 2000,
     });
   };
 

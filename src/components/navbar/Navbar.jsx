@@ -70,7 +70,7 @@ const Navbar = () => {
             <FaUser size={24} />
           </p> */}
         </div>
-        <button className="bg-gradient-to-r from-orange-500 to-yellow-300 px-6 lg:py-2 py-2 rounded-md text-white font-semibold shadow-md">Contact US</button>
+        <Link to="/contact" className="bg-gradient-to-r from-orange-500 to-yellow-300 px-6 lg:py-2 py-2 rounded-md text-white font-bold shadow-md">Contact US</Link>
       </div>
 
       {/* Mobile Navigation Menu */}

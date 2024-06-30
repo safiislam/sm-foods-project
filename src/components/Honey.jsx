@@ -38,7 +38,7 @@ const Honey = () => {
       </p>
 
       {/* product details */}
-      <div className="w-[90%] mx-auto gap- py-10 grid md:grid-cols-2 lg:grid-cols-4 lg:ps-4 ">
+      <div className="w-[90%] mx-auto gap-4 grid md:grid-cols-2 lg:grid-cols-3 lg:mt-8 max-w-7xl  lg:ps-8 ">
         {products.map((product) => (
           <div
             key={product.id}
@@ -54,7 +54,7 @@ const Honey = () => {
               </figure>
               <div className="card-body">
                 <h2 className="text-xl font-bold">{product.name}</h2>
-                <div className=" flex justify-between font-bold items-center">
+                <div className=" flex justify-between font-bold items-center py-2">
                   <p>Quantity: {product.quantity} </p>
 
                   <p className="font-bold">
