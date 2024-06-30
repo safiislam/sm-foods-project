@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import "./Navbar.css";
 import { IoCart } from "react-icons/io5";
-import { FaUser } from "react-icons/fa";
+// import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { getLocalData } from "../../utils/setLocalStorage";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -88,19 +88,19 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
 
-        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+        <li onClick={handleNav} className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
           <Link to="/">Home</Link>
         </li>
-        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+        <li onClick={handleNav} className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
           <Link to="/allProduct">All Product</Link>
         </li>
-        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+        <li onClick={handleNav} className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
           <Link to="/sorishaOil">Sorisha Oil</Link>
         </li>
-        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+        <li onClick={handleNav} className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
           <Link to="/ghee">Gawa Ghee</Link>
         </li>
-        <li className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
+        <li onClick={handleNav} className="p-4 border-b rounded-xl text-white  duration-300  cursor-pointer border-gray-600">
           <Link to="/honey">Honey</Link>
         </li>
 

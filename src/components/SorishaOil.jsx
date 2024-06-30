@@ -35,7 +35,7 @@ const SorishaOil = () => {
 
   return (
     <div>
-      <p className=" text-center lg:font-bold lg:text-4xl mt-3  w-full bg-gradient-to-r from-orange-500 to-yellow-200 py-12 text-white uppercase">
+      <p className=" text-center font-bold md:text-4xl text-xl mt-3  w-full bg-gradient-to-r from-orange-500 to-yellow-200 py-12 text-white uppercase">
         Mustard oil / দেশি সরিষার তেল
       </p>
 
