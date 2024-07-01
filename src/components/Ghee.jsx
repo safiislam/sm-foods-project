@@ -19,7 +19,6 @@ const Ghee = () => {
       });
     //   .catch((error) => console.error('Error fetching data:', error));
   }, []);
-
   const handleAddToCart = (product) => {
     addToDb(product?.id)
     Swal.fire({

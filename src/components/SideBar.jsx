@@ -41,7 +41,6 @@ const SideBar = () => {
         });
 
     }
-
     useEffect(() => {
         const fetchData = async () => {
             const localData = await getLocalData();
