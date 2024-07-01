@@ -3,10 +3,12 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { addToDb, getLocalData, removeFromDb, removeOneFromDb } from "../utils/setLocalStorage";
 import { RxCross2 } from "react-icons/rx";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 
 const SideBar = () => {
     const [data, setData] = useState([])
+    const navigate = useNavigate()
     const { isSidebarOpen, setIsSidebarOpen } = useContext(AuthContext)
     const handleAddToCart = (product) => {
         console.log(product);
@@ -54,15 +56,15 @@ const SideBar = () => {
             <div className="flex flex-col h-full">
                 <div className="flex justify-between items-center p-8 border-b  bg-slate-100">
                     <p className="text-3xl font-bold bg-slate-">Shopping Cart</p>
-                    <span onClick={() => setIsSidebarOpen(false)} className="text-3xl cursor-pointer font-bold"><RxCross2/></span>
+                    <span onClick={() => setIsSidebarOpen(false)} className="text-3xl cursor-pointer font-bold"><RxCross2 /></span>
                 </div>
                 <div className="flex-1 overflow-y-auto px-4 py-4 border-l">
                     {
                         data.map((item, index) => (
-                            
+
                             <div key={index} className="flex justify-between mt-8  items-center ">
                                 <div className="flex items-center gap-3  w-[50%]">
-                                    
+
                                     <img className="w-20 h-20" src={item.Image} alt="" />
                                     <div className="flex flex-col">
                                         <div>
@@ -70,16 +72,16 @@ const SideBar = () => {
                                             {/* <p>{item.quantity}</p> */}
                                             <p>Tk {item.price}</p>
                                         </div>
-                                        
+
                                     </div>
                                 </div>
 
                                 <div>
-                                            <button onClick={() => handleRemoveCart(item)} className="btn text-xl">-</button>
-                                            <span className="px-4">{item?.quantity}</span>
-                                            <button onClick={() => handleAddToCart(item)} className="btn text-xl">+</button>
-                                        </div>
-                                <span onClick={() => handleDelete(item)} className="text-2xl cursor-pointer"><RxCross2/></span>
+                                    <button onClick={() => handleRemoveCart(item)} className="btn text-xl">-</button>
+                                    <span className="px-4">{item?.quantity}</span>
+                                    <button onClick={() => handleAddToCart(item)} className="btn text-xl">+</button>
+                                </div>
+                                <span onClick={() => handleDelete(item)} className="text-2xl cursor-pointer"><RxCross2 /></span>
                             </div>
                         ))
                     }
@@ -89,10 +91,13 @@ const SideBar = () => {
                         <span className="text-xl font-semibold">Subtotal</span>
                         <span className="text-xl font-semibold">Tk {totalPrice}</span>
                     </div>
-                    <button className="w-full bg-orange-400 font-semibold mt-3 text-white py-3 text-xl">Confirm Order</button>
+                    <button onClick={() => {
+                        setIsSidebarOpen(false);
+                        navigate('checkout');
+                    }} className="w-full bg-orange-400 font-semibold mt-3 text-white py-3 text-xl">Confirm Order</button>
                 </div>
             </div>
-        </div>
+        </div >
 
 
     );

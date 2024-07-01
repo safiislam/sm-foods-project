@@ -8,6 +8,7 @@ import ProductDetails from './components/ProductDetails';
 import Ghee from './components/Ghee';
 import Honey from './components/Honey';
 import SorishaOil from './components/SorishaOil';
+import Checkout from './components/Checkout';
 
 
 export const router = createBrowserRouter([
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
                 path: "/",
                 element: <Home></Home>
             },
-            
+
             {
                 path: "/about",
                 element: <About></About>,
@@ -32,7 +33,7 @@ export const router = createBrowserRouter([
             {
                 path: "/productDetails/:id",
                 element: <ProductDetails></ProductDetails>,
-                loader: async({params}) => {
+                loader: async ({ params }) => {
                     const res = await fetch(`/ProductData.json`)
                     const data = await res.json()
                     const singleProduct = data.find(details => details.id == params.id)
@@ -54,10 +55,9 @@ export const router = createBrowserRouter([
                 path: "/sorishaOil",
                 element: <SorishaOil></SorishaOil>,
             },
-
             {
-                path: "/contact",
-                element: <Contact></Contact>,
+                path: "/checkout",
+                element: <Checkout></Checkout>,
             }
         ]
     }
