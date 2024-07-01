@@ -76,7 +76,8 @@ const Footer = () => {
     <>
 
     <footer className="relative z-10 bg-gray-50 pb-10 pt-20  lg:pb-4 lg:pt-[70px] ">
-        <div className="container ">
+      {/* container */}
+        <div className=" ">
           <div className=" w-[90%] mx-auto md:flex justify-between flex-wrap ">
             {/* 1st div */}
             <div className=" md:w-[30%] ">
