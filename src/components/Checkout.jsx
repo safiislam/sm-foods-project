@@ -23,7 +23,7 @@ const Checkout = () => {
             setData(localData);
         };
         fetchData();
-    }, []);
+    }, [getLocalData, data]);
     const productDetails = {}
 
     const totalPrice = data.reduce((acc, cur) => acc + (cur.quantity * cur.price), 0);
